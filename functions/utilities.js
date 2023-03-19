@@ -1,4 +1,4 @@
-function generate_random_class_name(){
+export function generate_random_class_name(){
     const part1 = (Math.random() * 1e17).toString()
     const part2 = (Math.random() * 1e17).toString()
     const part3 = (Math.random() * 1e17).toString()

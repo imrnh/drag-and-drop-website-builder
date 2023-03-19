@@ -3,7 +3,7 @@ function menubar_button(cl_1, cl_2) {
   mbar_button.setAttribute("type", "button");
 
   //edit icon
-  _btn_icon = document.createElement("i");
+  let _btn_icon = document.createElement("i");
   _btn_icon.classList.add(cl_1); //fa-solid
   _btn_icon.classList.add(cl_2); //fa-pen
 
@@ -12,7 +12,7 @@ function menubar_button(cl_1, cl_2) {
   return mbar_button;
 }
 
-function menubar() {
+function  menubar() {
   const menubar = document.createElement("div");
 
   menubar.classList.add("ui_def_menubar");
@@ -26,7 +26,7 @@ function menubar() {
   return menubar;
 }
 
-function _wrap(__component__, classes) {
+export function  _wrap(__component__, classes) {
   const local_wrapper = document.createElement("div");
   local_wrapper.classList.add("ui_def_local_wrapper");
 

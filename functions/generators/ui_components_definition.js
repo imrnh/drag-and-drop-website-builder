@@ -1,4 +1,6 @@
-function textComponent(unique_identifier, placeholder = "Text...") {
+import { _wrap } from "./global_component.js";
+
+export function textComponent(unique_identifier, placeholder = "Text...") {
   const text = document.createElement("input");
   text.classList.add("ui_definition_text_component"); //to style
   text.setAttribute("type", "text");
@@ -7,7 +9,7 @@ function textComponent(unique_identifier, placeholder = "Text...") {
   return _wrap(text, [unique_identifier, "text_inputs"]);
 }
 
-function imageComponent(
+export function imageComponent(
   unique_identifier,
   image_path = "",
   alter_text = "",

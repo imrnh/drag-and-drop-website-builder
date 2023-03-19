@@ -1,3 +1,7 @@
+import { generate_random_class_name } from "./utilities.js";
+import {class_map} from './generators/mapping.js';
+
+
 const _component_bar = document.querySelector(".component_bar");
 const _canvas = document.querySelector(".canvas");
 const _attribute_bar = document.getElementsByClassName(".attribute_bar");
@@ -28,8 +32,7 @@ _canvas.addEventListener('drop', handle_drop);
 /*  Utilities  */
 function handle_dragstart(evnt) {
     dragged_element = evnt.srcElement;
-    generator_identity = evnt.srcElement.className.split(" ")[0];
-
+    let generator_identity = evnt.srcElement.className.split(" ")[0];
     let random_class_name = generate_random_class_name();
     element_to_attach = class_map[generator_identity](random_class_name);
 }
