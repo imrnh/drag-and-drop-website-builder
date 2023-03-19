@@ -1,0 +1,25 @@
+.attribute_bar_container{
+    width: auto;
+    height: auto;
+    padding-left: 20px;
+    padding-top: 50px;
+}
+
+.attribute_bar_container input{
+    width: 200px;
+    height: 25px;
+    border-radius: 3px;
+    border: 0.01rem solid black;
+    padding-left: 20px;
+    margin-top: -2px;
+}
+
+.attbar_single_prop_wrapper{
+    display: flex;
+    width: 400px;
+    font-size: 13px;
+}
+
+.attbar_single_prop_wrapper p{
+    width: 100px;
+}
