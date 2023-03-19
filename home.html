@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drag and Drop app builder system</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/generators_styles/components_styles.css"
+    />
+  </head>
+  <body>
+    <div class="dashboard_wrapper">
+      <!-- Component Bar -->
+      <div class="component_bar"></div>
+
+      <!-- Designer Canvas -->
+      <div class="viewport"><div class="canvas"></div></div>
+
+      <!-- Element's attribute bar -->
+      <div class="attribute_bar"></div>
+    </div>
+  </body>
+
+  <script src="./functions/component_bar/component-builder.js"></script>
+  <script src="./functions/generators/ui_components_definition.js"></script>
+  <script src="./functions/generators/mapping.js"></script>
+  <script src="./functions/sortable.min.js"></script>
+  <script src="./functions/main.js"></script>
+</html>

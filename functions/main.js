@@ -14,15 +14,20 @@ _cmpbar_components.forEach((cmpnt) => {
   cmpnt.addEventListener("dragstart", handle_dragstart);
 });
 
+
+//adding drop event to canvas
+_canvas.addEventListener("dragover", (e) => e.preventDefault());
 _canvas.addEventListener('drop', handle_drop);
 
+
+
+/*  Utilities  */
 function handle_dragstart(evnt) {
-    generator_identity = evnt.target.className.split(" ")[0];
+    generator_identity = evnt.srcElement.className.split(" ")[0];
     element_to_attach = class_map[generator_identity]();
 }
 
 function handle_drop(evnt){
-    console.log(evnt.target.className.split(" "));
     if(evnt.target.className.split(" ").includes('canvas')){
         evnt.target.append(element_to_attach);
     }
